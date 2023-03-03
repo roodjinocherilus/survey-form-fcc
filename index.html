@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="form">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you For your feedback</p>
+
+    <form id="survey-form">
+        <fieldset>
+      <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      
+      <label for="email" id="email-label">Email </label>
+        <input type="email" id="email"  placeholder="Enter Your mail" required>
+
+      <label for="number" id="number-label">Age  </label>
+        <input type="number" id="number" required min="15" max="60"  placeholder="Enter Your Age">
+    
+         </fieldset>
+      <fieldset>
+      <label for=dropdown">Which option would best describe your current role?</label>
+       <select id="dropdown">
+         <option>Select Current Role</option>
+          <option>Graphic Designer</option>
+           <option>Web Developer</option>
+            <option>Mobile Application Developer</option>
+       </select>
+
+      </fieldset>
+
+      <fieldset>
+      <label>Would you recommend freeCodeCamp to a friend?  </label>
+      <label class="block">
+        <input type="radio" name="recommendation" value="yes"> Yes
+    </label>
+     <label class="block">
+        <input type="radio" name="recommendation" value="No"> No
+    </label>
+     <label class="block">
+        <input type="radio" name="recommendation" value="Maybe"> Maybe
+    </label>
+<label></label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)?</label>
+        <label class="block"><input type="checkbox" value="Data">Data</label>
+         <label class="block"><input type="checkbox" value="Front-end">Front-end</label>
+          <label class="block"><input type="checkbox" value="Backend">Backend</label>
+           <label class="block"><input type="checkbox" value="UI-Design">Ui Design</label>
+      </fieldset>
+      <fieldset>
+        <label>Any Comment</label>
+        <textarea rows="3" cols="33" >
+        </textarea>
+        </fieldset>
+        
+<button id="submit" type="submit">Submit</button>
+    </form>
+    <div>
+  </body>
+</html>
